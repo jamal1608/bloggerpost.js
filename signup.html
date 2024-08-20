@@ -1,0 +1,63 @@
+<span style="font-family: verdana, geneva, sans-serif;"><!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <title>Sign Up | By Code Info</title>
+        <link rel="stylesheet" href="/style/style.css" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body>
+
+        <!-- navbar -->
+        <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <label class="logo">BloggerPost.Com</label>
+          <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            
+          
+            </div>
+          </ul>
+        </nav><br><br>
+
+
+
+
+
+
+        <div class="signup-box">
+          <h1>Sign Up</h1>
+          <h4>It's free and only takes a minute</h4>
+          <form>
+            <div id="signupmsg" class="msgdiv" style="display: none;"></div>
+            <label>Email</label>
+            <input type="email" placeholder="Email here"  id="emailup"/>
+            <label>Password</label>
+            <input type="password" placeholder="Password here" id="passwordup"/>
+            <label>Confirm Password</label>
+            <input type="password" placeholder="confirm your password"  id="passwordc"/>
+            <input type="button" onclick="newdoc()" value="Submit" id="signup" />
+          </form>
+          <p>
+            By clicking the Sign Up button,you agree to our <br />
+            <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+          </p>
+        </div>
+        <p class="para-2">
+          Already have an account? <a href="login.html">Login here</a>
+        </p>
+        <script type="module"  src="js/firebase.mjs"></script>
+        <script type="module" src="js/signup.js"></script>
+
+      </body>
+    </html></span>

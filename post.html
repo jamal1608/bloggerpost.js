@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+    rel="stylesheet"
+  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <title>Document</title>
+
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">BloggerPost.Com</label>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Feedback</a></li>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      
+    
+      </div>
+    </ul>
+  </nav>
+
+
+<!-- text Area -->
+   <div id="wrapper">
+
+    <div id="paper">
+  
+       <div id="margin">Title: 
+      <input id="title" type="text" name="title"></div>
+      <textarea placeholder="Write Your Best Bllogger Post Here." id="text" name="text" rows="4" style="overflow: hidden; word-wrap: break-word; resize: none; height: 160px; "></textarea>  
+      <div class="mb-3">
+        <label for="formFileSm" class="form-label">Upload Image</label>
+        <input class="form-control form-control-sm" id="img" type="file">
+      </div>
+       <button id="submit" class="btnpost">Submit</button> 
+      <!-- <button id="submitimg" type="submit" value="Create" class="btnpost">Edit Post</button>  -->
+      <!-- <button id="submit" type="submit" value="Creat" class="btnpost">Delete Post</button> 
+        -->
+       </div>
+  
+  </div> 
+
+  <div id="signinmsg" class="msgdiv" style="display: none;"></div>
+
+
+
+
+
+    <!-- <div class="post">
+<input type="text" id="title" placeholder="enter Title of your post">
+<input type="text" id="text" placeholder="write your post">
+<input type="file" id="img">
+<button id="submit">submit</button></div> -->
+
+<div id="updatepost">
+  <div class="editpost"></div>
+
+</div>
+
+
+
+
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+<script src="js/firebase.mjs" type="module"></script>
+<script src="js/firestore.js" type="module"></script>
+    
+</body>
+</html>

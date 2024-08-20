@@ -1,0 +1,61 @@
+<span style="font-family: verdana, geneva, sans-serif;"><!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <title>Login | By Code Info</title>
+        <link rel="stylesheet" href="style/style.css" />
+        
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body>
+
+        <!-- navbar -->
+        <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <label class="logo">BloggerPost.Com</label>
+          <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            
+          
+            </div>
+          </ul>
+        </nav>
+
+
+
+
+
+
+<h1 style="color: antiquewhite;">Login Here to Join Our Community</h1>
+<br><br><br>
+
+
+        <div class="login-box">
+          <h1>Login</h1>                
+          <form>
+            <div id="signinmsg" class="msgdiv" style="display: none;"></div>
+            <label>Email</label>
+            <input type="email" placeholder=" Email Here" id="emailin" />
+            <label>Password</label>
+            <input type="password" placeholder=" Password Here" id="passwordin" />
+            <input type="button" value="Submit" id="login" class="login"/>
+          </form>
+        </div><br><br><br>
+        <p class="para-2">
+          Not have an account? <a href="signup.html">Sign Up Here</a>
+        </p>
+
+        <script type="module"  src="js/firebase.mjs"></script>
+        <script type="module" src="js/login.js"></script>
+      </body>
+    </html></span>
